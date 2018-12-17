@@ -10,11 +10,24 @@ import java.util.stream.Stream;
 public class Esier_stream {
 
     public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+//        for (int number : numbers) {
+//            System.out.println(number);
+//        }
+
+        Runnable r = () -> System.out.println("hello world");
+        System.out.println(r.toString());
+
+        numbers.forEach(System.out::println);
+//       int sum = (int a=2, int b=4 ->  a+b);
+//        System.out.println(sum);
 
 
     }
-
 }
+
+
+
 
 //class myStreamEmployee{
 //    private static Employee[] arrayOfEmps = {
