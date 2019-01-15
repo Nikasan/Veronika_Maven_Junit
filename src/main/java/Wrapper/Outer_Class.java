@@ -5,6 +5,12 @@ class Outer_Class {
     public static void main(String[] args) {
         Outer_Class.NestedClass nestedStatic = new Outer_Class.NestedClass();
         System.out.println(nestedStatic.NestedMethod());
+        /*
+        Статические вложенные классы, не имеют доступа к нестатическим полям и методам обрамляющего класса,
+что в некотором роде аналогично статическим методам, объявленным внутри класса. Доступ к
+нестатическим полям и методам может осуществляться только через ссылку на экземпляр обрамляющего
+класса. В этом плане static nested классы очень похожи на любые другие классы верхнего уровня.
+         */
         System.out.println(NestedClass.sumMethod(5,6));
         Outer_Class outer = new Outer_Class();
         Outer_Class.InnerClass inner = outer.new InnerClass();
